@@ -69,7 +69,7 @@ Deberíamos crear la base de datos y la tabla film, esto podría ser algo así:
 
 ¿Qué hace? Explicadlo.
 
-# Una vieja conocidad, la función swap.
+# Una vieja conocida, la función swap.
 
 Esta función intercambia dos valores, ¿verdad?
 
