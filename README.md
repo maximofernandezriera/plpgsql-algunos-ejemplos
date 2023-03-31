@@ -73,15 +73,16 @@ Deberíamos crear la base de datos y la tabla film, esto podría ser algo así:
 
 Esta función intercambia dos valores, ¿verdad?
 
-create or replace function swap(
-	inout x int,
-	inout y int
-) 
-language plpgsql	
-as $$
-begin
-   select x,y into y,x3 ;
-end; $$;
+		create or replace function swap(
+			inout x int,
+			inout y int
+		) 
+		language plpgsql	
+		as $$
+		begin
+		   select x,y into y,x3 ;
+		end; 
+		$$;
 
 # Un ejercicio
 
