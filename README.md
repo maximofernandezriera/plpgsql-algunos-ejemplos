@@ -68,6 +68,28 @@ Deberíamos crear la base de datos y la tabla film, esto podría ser algo así:
 
 ¿Qué hace? Explicadlo.
 
+# Una vieja conocidad, la función swap.
+
+Esta función intercambia dos valores, ¿verdad?
+
+create or replace function swap(
+	inout x int,
+	inout y int
+) 
+language plpgsql	
+as $$
+begin
+   select x,y into y,x3 ;
+end; $$;
+
+# Un ejercicio
+
+Crear una función que reciba un parámetro numérico y devuelva el doble de ese número.
+
+# Otro más
+
+ Crear una función que reciba un parámetro de texto (nombre de una ciudad) y actualice la tabla "customers" estableciendo un descuento del 10% para todos los clientes que residan en esa ciudad.
+
 # Fuente
 
 - https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-function-parameters/
