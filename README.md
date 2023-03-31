@@ -23,7 +23,7 @@
 
       end;$$
 
-Vemos que definimos una función llamada find_film_by_id que toma un parámetro p_film_id de tipo int y devuelve un valor de tipo varchar.
+Vemos que definimos una función llamada find_film_by_id que toma un parámetro p_film_id de tipo int y devuelve el valor del nombre de tipo varchar.
 
 La función declara una variable local llamada film_title del mismo tipo que la columna title de la tabla film. Luego, la función ejecuta una consulta para seleccionar el título de la película con el film_id igual al valor del parámetro p_film_id y lo guarda en la variable film_title.
 
