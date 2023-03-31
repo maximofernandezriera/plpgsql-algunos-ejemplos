@@ -46,6 +46,27 @@ Deberíamos crear la base de datos y la tabla film, esto podría ser algo así:
       INSERT INTO film (title, release_year) VALUES ('The Shawshank Redemption', 1994);
       INSERT INTO film (title, release_year) VALUES ('The Godfather', 1972);
       INSERT INTO film (title, release_year) VALUES ('The Godfather: Part II', 1974);
+      
+      
+# Un paso más con parámetros out
+
+            create or replace function get_film_stat(
+                out min_len int,
+                out max_len int,
+                out avg_len numeric) 
+            language plpgsql
+            as $$
+            begin
+
+              select min(length),
+                     max(length),
+                         avg(length)::numeric(5,1)
+              into min_len, max_len, avg_len
+              from film;
+
+            end;$$
+
+¿Qué hace? Explicadlo.
 
 # Fuente
 
