@@ -19,9 +19,10 @@
            raise 'Film with id % not found', p_film_id;
         end if;
 
-        return title;
+        return film_title;
 
-      end;$$
+      end;
+      $$;
 
 Vemos que definimos una función llamada find_film_by_id que toma un parámetro p_film_id de tipo int y devuelve el valor del nombre de tipo varchar.
 
