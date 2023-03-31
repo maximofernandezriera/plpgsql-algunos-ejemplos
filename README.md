@@ -41,7 +41,7 @@ Deberíamos crear la base de datos y la tabla film, esto podría ser algo así:
         release_year INTEGER
       );
       
-#Un ejemplo de INSERT:
+# Un ejemplo de INSERT:
  
       INSERT INTO film (title, release_year) VALUES ('The Shawshank Redemption', 1994);
       INSERT INTO film (title, release_year) VALUES ('The Godfather', 1972);
