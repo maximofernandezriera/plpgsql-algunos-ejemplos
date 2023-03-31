@@ -89,6 +89,10 @@ Crear una función que reciba un parámetro numérico y devuelva el doble de ese
 # Otro más
 
  Crear una función que reciba un parámetro de texto (nombre de una ciudad) y actualice la tabla "customers" estableciendo un descuento del 10% para todos los clientes que residan en esa ciudad.
+ 
+ # Y otro más
+ 
+ Crear una función que reciba un parámetro de texto (nombre de una categoría) y actualice la tabla "products" estableciendo un descuento del 20% para todos los productos que pertenezcan a esa categoría. Además, la función debe insertar un registro en la tabla "discount_logs" para registrar la fecha y hora en que se aplicó el descuento.
 
 # Fuente
 
